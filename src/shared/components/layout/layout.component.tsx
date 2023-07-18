@@ -10,10 +10,7 @@ interface LayoutProps extends PropsWithChildren {
 
 export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
   return (
-    <div
-      className="container flex mx-auto p-4 overflow-y-auto 
-        min-h-screen w-full flex-col"
-    >
+    <div className="relative flex flex-col mx-auto w-full min-h-screen bg-[#1A1A1A] text-white font-montserrat">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -28,6 +25,7 @@ export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
       </Head>
 
       <Navbar />
+
       <main className="flex-grow">{children}</main>
 
       <Footer />
