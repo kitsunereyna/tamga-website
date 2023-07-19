@@ -6,17 +6,9 @@ module.exports = {
       fontFamily: {
         caesar: ["Caesar Dressing", "cursive"],
         montserrat: ["Montserrat", "sans-serif"],
-        bebas: ["Bebas Neue", "sans-serif"]
+        bebas: ["Bebas Neue", "sans-serif"],
       },
     },
   },
   plugins: [],
-  theme: {
-    extend: {
-      backgroundImage: theme => ({
-         'shaman': "url('/src/shared/images/maincopy.jpg')",
-      })
-    }
-  }
 };
-
