@@ -3,22 +3,31 @@ import { NAVBAR_LINKS } from "@/shared/config/pages";
 import Image from "next/image";
 
 const IMAGE_URL =
-  "https://images.unsplash.com/photo-1574681401861-07d9d0427871?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80";
+  "https://c.wallhere.com/photos/f6/65/2000x1466_px_leopard_Shaman-1506693.jpg!d";
 
 export const LandingBanner = () => {
   return (
     <HeroBackgorund
       id={NAVBAR_LINKS.HOME.id}
       priority
-      url={IMAGE_URL}
+      className="bg-shaman"
       alt={"Landing Banner"}
     >
-      <div className="w-full md:w-1/2 text-white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aut //
-        suscipit repudiandae accusamus labore! Earum magni nam quia doloremque
-        aperiam quas, ea rem a eius! Provident, sequi! Qui, asperiores //
-        dignissimos?
+      <div className="w-full md:w-1/2  text-white">
+        <div className="text-7xl font-bebas">
+          IMMERSE INTO THE PAST OF <br></br>THE GREAT STEPPE
+        </div>
+
+        <div className="pt-8 text-2xl font-montserrat">
+          Become a part of the history with TAMGA
+        </div>
+
+        <button className="mt-12 bg-[#C96A13] px-10 py-4 rounded-[14px] text-l font-montserrat">
+          Purchase now
+        </button>
+
       </div>
+    
     </HeroBackgorund>
   );
 };
