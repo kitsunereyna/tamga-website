@@ -10,6 +10,8 @@ export const PAGES = {
   },
 };
 
+export const YOUTUBE_TRAILER_ID = "2dM3hRQcs74";
+
 export const NAVBAR_LINKS = {
   HOME: { id: "home", label: "Home" },
   TRAILER: { id: "story", label: "Story" },

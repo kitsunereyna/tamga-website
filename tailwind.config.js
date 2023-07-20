@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         caesar: ["Caesar Dressing", "cursive"],
         montserrat: ["Montserrat", "sans-serif"],
-        bebas: ["Bebas Neue", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

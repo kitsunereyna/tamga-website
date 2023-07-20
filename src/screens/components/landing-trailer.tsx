@@ -1,38 +1,34 @@
 import { HeroBackgorund } from "@/shared/components/hero-background/hero-background.component";
-import { NAVBAR_LINKS } from "@/shared/config/pages";
-import BannerImage from "../../../public/assets/images/trailer.png";
-
+import { NAVBAR_LINKS, YOUTUBE_TRAILER_ID } from "@/shared/config/pages";
+import TrailerBgImage from "../../../public/assets/images/trailer.png";
+import { YoutubePlayer } from "@/shared/components/youtube-player/youtube-player.component";
 
 export const LandingTrailer = () => {
   return (
     <HeroBackgorund
-      id={NAVBAR_LINKS.HOME.id}
+      id={NAVBAR_LINKS.TRAILER.id}
       priority
-      url={BannerImage}
-      alt={"Landing Banner"}
+      url={TrailerBgImage}
+      alt={"Trailler Background"}
     >
-
-      <div className="w-full flex gap-16">
-        <div className="text-white flex flex-col ">
-          <div className="text-6xl font-bebas">
-          THE HISTORY THAT <br></br> CHANGED EVERYTHING
+      <div className="flex justify-center items-center gap-y-14 flex-col lg:flex-row lg:gap-28">
+        <div className="flex text-white flex-col gap-6">
+          <div className="text-3xl md:text-4xl font-bold">
+            THE HISTORY THAT <br></br> CHANGED EVERYTHING
           </div>
 
-          <div className="pt-8 text-lg font-montserrat">
-          TAMGA - is more than just a game, here you will become the protagonist of a long-forgotten legend set under Tomyris rule. Get an amazing experience, interact with people of strength, and experience the true essence of the era of kings and warriors. Join us to enjoy an incredible story that will leave you with lasting memories.        </div>
-
-        
+          <div className="text-base text-gray-300">
+            TAMGA - is more than just a game, here you will become the
+            protagonist of a long-forgotten legend set under Tomyris rule. Get
+            an amazing experience, interact with people of strength, and
+            experience the true essence of the era of kings and warriors. Join
+            us to enjoy an incredible story that will leave you with lasting
+            memories.
+          </div>
         </div>
-        <div className=" w-full aspect-w-16 aspect-h-9">
-          <iframe
-            src={"https://www.youtube.com/embed/" + "watch?v=2dM3hRQcs74"}
-            title={"Teaser"}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className="w-full min-w-[500px] lg:min-w-[600px]">
+          <YoutubePlayer videoId={YOUTUBE_TRAILER_ID} />
         </div>
-       
       </div>
     </HeroBackgorund>
   );

@@ -10,16 +10,16 @@ export const LandingBanner = () => {
       url={BannerImage}
       alt={"Landing Banner"}
     >
-      <div className="w-full md:w-1/2  text-white">
-        <div className="text-7xl font-bebas">
+      <div className="w-full md:w-1/2 text-white">
+        <div className="text-3xl md:text-5xl uppercase font-bold">
           IMMERSE INTO THE PAST OF <br></br>THE GREAT STEPPE
         </div>
 
-        <div className="pt-8 text-2xl font-montserrat">
+        <div className="mt-5 text-xl">
           Become a part of the history with TAMGA
         </div>
 
-        <button className="mt-12 bg-[#C96A13] px-10 py-4 rounded-[14px] text-l font-montserrat">
+        <button className="mt-8 bg-[#e48023] px-10 py-4 rounded-xl text-base">
           Purchase now
         </button>
       </div>

@@ -10,7 +10,7 @@ interface LayoutProps extends PropsWithChildren {
 
 export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
   return (
-    <div className="relative flex flex-col mx-auto w-full min-h-screen bg-[#1A1A1A] text-white font-montserrat">
+    <div className="relative flex flex-col mx-auto w-full min-h-screen bg-[#1A1A1A] text-white font-poppins">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
